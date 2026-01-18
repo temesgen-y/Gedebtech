@@ -16,7 +16,7 @@ export interface ChatbotConfig {
 }
 
 export const defaultChatbotConfig: ChatbotConfig = {
-  companyName: "wODEB Technologies",
+  companyName: "Gedeb Technologies",
   brandColors: {
     primary: "hsl(var(--primary))",
     secondary: "hsl(var(--secondary))",
@@ -28,7 +28,7 @@ export const defaultChatbotConfig: ChatbotConfig = {
     contactForm: "/contact",
   },
   defaultTheme: "system",
-  welcomeMessage: "Hello! Welcome to wODEB Technologies. I'm your virtual assistant. How may I help you today?",
+  welcomeMessage: "Hello! Welcome to Gedeb Technologies. I'm your virtual assistant. How may I help you today?",
   quickReplies: [
     "Tell me about your services",
     "View projects",

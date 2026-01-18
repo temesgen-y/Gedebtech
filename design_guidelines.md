@@ -1,4 +1,4 @@
-# wODEB Technologies - Design Guidelines
+# Gedeb Technologies - Design Guidelines
 
 ## Design Approach
 

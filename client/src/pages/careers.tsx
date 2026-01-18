@@ -70,7 +70,7 @@ const benefits = [
     icon: Laptop,
     title: "Innovative Projects",
     description:
-      "Be a part of groundbreaking projects that challenge the status quo and push the boundaries of technology. At wODEB, your creativity and expertise will be at the forefront of every project.",
+      "Be a part of groundbreaking projects that challenge the status quo and push the boundaries of technology. At Gedeb, your creativity and expertise will be at the forefront of every project.",
   },
 ];
 
@@ -166,14 +166,14 @@ export default function Careers() {
                   data-testid="text-careers-page-title"
                 >
                   <span className="text-primary">
-                    wODEBTech is the catalyst
+                    GedebTech is the catalyst
                   </span>{" "}
                   <span className="text-slate-900 dark:text-slate-100">
                     to transform your career
                   </span>
                 </h1>
                 <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                  wODEBTech provides the right opportunity to amplify your
+                  GedebTech provides the right opportunity to amplify your
                   unique talents and learn and grow in a vibrant, diverse, and
                   inclusive workplace. Start your journey now!
                 </p>
@@ -242,7 +242,7 @@ export default function Careers() {
       <section className="py-12 lg:py-16 bg-background border-b border-border">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
-            From entry level to intermediate or experienced-level, wODEBTech offers a wide range of positions 
+            From entry level to intermediate or experienced-level, GedebTech offers a wide range of positions 
             relevant to your experience. We are committed to creating a work environment where people stay informed, 
             productive and connected to the company's culture. We are proud to be an equal opportunity and an 
             inclusive employer that is a leader in non-discrimination based on race, ethnicity, religion, disability, 
@@ -255,7 +255,7 @@ export default function Careers() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl lg:text-4xl font-semibold mb-4">
-              Why Work at wODEB Technologies?
+              Why Work at Gedeb Technologies?
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We offer a comprehensive benefits package designed to support your
@@ -289,7 +289,7 @@ export default function Careers() {
               Open Positions
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Find your next opportunity with wODEB Technologies
+              Find your next opportunity with Gedeb Technologies
             </p>
           </div>
           <div className="space-y-4">

@@ -10,8 +10,8 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = "wODEB Technologies - Enterprise Software Development & Technology Services",
-  description = "wODEB Technologies delivers innovative, scalable software solutions for enterprise, government, and startup clients. Custom development, talent sourcing, and digital transformation.",
+  title = "Gedeb Technologies - Enterprise Software Development & Technology Services",
+  description = "Gedeb Technologies delivers innovative, scalable software solutions for enterprise, government, and startup clients. Custom development, talent sourcing, and digital transformation.",
   keywords = "software development, enterprise software, custom software, web development, mobile app development, technology services, digital transformation, software consulting, IT services, application development, cloud solutions, software engineering",
   image = "https://gedebtech.com/og-image.jpg",
   url = "https://gedebtech.com",

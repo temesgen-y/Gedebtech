@@ -114,7 +114,7 @@ export default function Industries() {
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src={logoImage} 
-                alt="wODEBTech Solutions" 
+                alt="GedebTech Solutions" 
                 className="h-12 w-auto"
               />
               <h1 className="font-serif text-3xl lg:text-5xl font-bold" data-testid="text-industries-page-title">

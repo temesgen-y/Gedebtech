@@ -347,7 +347,7 @@ export default function Contact() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="wODEBTech Office Location"
+            title="GedebTech Office Location"
             data-testid="map-location"
           />
         </div>
