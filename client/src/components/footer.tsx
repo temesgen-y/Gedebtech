@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { SiLinkedin, SiFacebook, SiTelegram, SiInstagram, SiYoutube, SiTiktok } from "react-icons/si";
-import logoImage from "@assets/g-logo_1768092260483.png";
+import { Logo } from "./logo";
 
 const footerLinks = {
   services: [
@@ -28,17 +28,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           <div className="lg:col-span-2">
-            <Link
-              href="/"
-              className="flex items-center gap-2 mb-4"
-              data-testid="link-footer-logo"
-            >
-              <img
-                src={logoImage}
-                alt="GedebTech Solutions"
-                className="h-20 w-auto"
-              />
-            </Link>
+            <div className="mb-4">
+              <Logo testId="link-footer-logo" />
+            </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-sm">
               Delivering innovative, reliable, and scalable software solutions
               for enterprise, government, and startup clients worldwide.

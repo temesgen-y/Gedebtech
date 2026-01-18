@@ -10,7 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logoImage from "@assets/g-logo_1768092260483.png";
+import { Logo } from "./logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -46,13 +46,7 @@ export function Navigation() {
     >
       <nav className="w-full px-4 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          <Link href="/" className="flex items-center gap-2" data-testid="link-logo">
-            <img 
-              src={logoImage} 
-              alt="GedebTech Solutions" 
-              className="h-20 w-auto"
-            />
-          </Link>
+          <Logo showTagline={false} />
 
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (

@@ -9,7 +9,7 @@ import manufacturingImage from "@assets/stock_images/manufacturing_indust_dc6007
 import ecommerceImage from "@assets/stock_images/e-commerce_retail_te_4dec67f7.jpg";
 import educationImage from "@assets/stock_images/education_technology_36fbdebb.jpg";
 import project1Image from "@assets/stock_images/software_development_59558925.jpg";
-import logoImage from "@assets/g-logo_1768092260483.png";
+import { Logo } from "@/components/logo";
 
 const industries = [
   {
@@ -112,11 +112,7 @@ export default function Industries() {
           <div className="max-w-3xl">
             <p className="text-sm font-medium text-primary mb-2">Industries</p>
             <div className="flex items-center gap-3 mb-4">
-              <img 
-                src={logoImage} 
-                alt="GedebTech Solutions" 
-                className="h-12 w-auto"
-              />
+              <Logo showTagline={false} linkToHome={false} className="transform scale-75 origin-left" />
               <h1 className="font-serif text-3xl lg:text-5xl font-bold" data-testid="text-industries-page-title">
                 Industry-Specific Solutions
               </h1>
