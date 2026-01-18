@@ -38,16 +38,16 @@ export function Navigation() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 overflow-visible ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
           : "bg-transparent"
       }`}
     >
-      <nav className="w-full px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24 overflow-visible">
-          <div className="overflow-visible">
-            <Logo showTagline={false} />
+      <nav className="w-full px-4 lg:px-8 overflow-visible">
+        <div className="flex items-center justify-between min-h-20 lg:min-h-28 h-auto overflow-visible py-2">
+          <div className="overflow-visible flex items-center">
+            <Logo showTagline={true} />
           </div>
 
           <div className="hidden lg:flex items-center gap-1">
