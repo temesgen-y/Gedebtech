@@ -185,7 +185,7 @@ export default function Home() {
               Leading Software Development Company in Ethiopia
             </h1>
             <p className="text-lg lg:text-xl text-white/80 mb-8 leading-relaxed">
-              Gedeb Technologies is a premier IT company in Ethiopia, delivering custom software development, web & mobile app development, cloud solutions, ERP systems, and SaaS applications. As a trusted technology company in Addis Ababa, we provide comprehensive IT solutions for businesses seeking digital transformation.
+              Gedeb Technologies, also known as Gedeb Tech, is a premier IT company in Ethiopia, delivering custom software development, web & mobile app development, cloud solutions, ERP systems, and SaaS applications. As a trusted technology company in Addis Ababa, we provide comprehensive IT solutions for businesses seeking digital transformation.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
