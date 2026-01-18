@@ -7,7 +7,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!\\.(ico|png|jpg|jpeg|svg|css|js|json|txt|xml|webp|woff|woff2|ttf|otf)$).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
