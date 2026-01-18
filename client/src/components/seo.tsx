@@ -10,9 +10,9 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = "Gedeb Technologies - Enterprise Software Development & Technology Services",
-  description = "Gedeb Technologies delivers innovative, scalable software solutions for enterprise, government, and startup clients. Custom development, talent sourcing, and digital transformation.",
-  keywords = "software development, enterprise software, custom software, web development, mobile app development, technology services, digital transformation, software consulting, IT services, application development, cloud solutions, software engineering",
+  title = "Software Development Company in Ethiopia - Gedeb Technologies",
+  description = "Leading software development company in Ethiopia. Custom software, web & mobile apps, ERP/LMS/CRM systems, cloud solutions, and SaaS development. IT company in Addis Ababa.",
+  keywords = "software development company in Ethiopia, IT company in Ethiopia, custom software development Ethiopia, web development company in Ethiopia, mobile app development Ethiopia, cloud solutions Ethiopia, SaaS application development, ERP software development Ethiopia, technology company in Ethiopia, software company in Addis Ababa, IT solutions provider Ethiopia, business automation solutions Ethiopia, digital transformation Ethiopia, hire software developers in Ethiopia",
   image = "https://gedebtech.com/og-image.jpg",
   url = "https://gedebtech.com",
   type = "website",

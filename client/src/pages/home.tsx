@@ -182,13 +182,10 @@ export default function Home() {
               className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               data-testid="text-hero-title"
             >
-              Building Tomorrow's
-              <span className="text-primary-foreground"> Technology</span> Today
+              Leading Software Development Company in Ethiopia
             </h1>
             <p className="text-lg lg:text-xl text-white/80 mb-8 leading-relaxed">
-              Gedeb Technologies delivers innovative, scalable software
-              solutions that drive digital transformation for enterprises,
-              governments, and startups worldwide.
+              Gedeb Technologies is a premier IT company in Ethiopia, delivering custom software development, web & mobile app development, cloud solutions, ERP systems, and SaaS applications. As a trusted technology company in Addis Ababa, we provide comprehensive IT solutions for businesses seeking digital transformation.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
@@ -231,15 +228,10 @@ export default function Home() {
                 About Gedeb
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-6">
-                Accelerating Growth with BPO
+                IT Solutions Provider Ethiopia: Your Technology Partner
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Gedeb Technologies is a trusted Business Process Outsourcing
-                (BPO) partner, helping organizations streamline operations and
-                enhance efficiency. We specialize in providing top-tier customer
-                support, data management, IT services, and back-office
-                solutions, enabling businesses to focus on their core
-                competencies while we handle the rest.
+                As a leading software company in Addis Ababa, Gedeb Technologies specializes in custom software development Ethiopia, delivering tailored solutions for businesses across diverse industries. We provide business automation solutions Ethiopia, helping organizations streamline operations and enhance efficiency through cutting-edge technology. Our expertise spans web development, mobile app development, cloud solutions, ERP software development, and SaaS application development.
               </p>
               <Link href="/about">
                 <Button size="lg" data-testid="button-home-about-us">
@@ -354,19 +346,10 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At Gedeb Technologies, our mission goes beyond traditional
-                software solutions. We are dedicated to creating impactful
-                opportunities by drastically reducing unemployment across
-                Ethiopia, while delivering exceptional, cost-effective services
-                to businesses worldwide.
+                At Gedeb Technologies, Ethiopia's premier software development company, our mission goes beyond traditional software solutions. We are dedicated to creating impactful opportunities by drastically reducing unemployment across Ethiopia, while delivering exceptional, cost-effective custom software development, web development, mobile app development, cloud solutions, ERP systems, and SaaS applications to businesses worldwide.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                With a base in Addis Ababa and representation globally, our
-                mission is twofold: driving sustainable growth across Ethiopia
-                by creating jobs and connecting businesses globally through
-                superior technology services. Together, we aim to build a future
-                where innovation and talent from Ethiopia help power the global
-                economy.
+                As a trusted IT company in Ethiopia with our base in Addis Ababa and representation globally, our mission is twofold: driving sustainable growth across Ethiopia through digital transformation and business automation solutions, while connecting businesses globally through superior technology services. Together, we aim to build a future where innovation and talent from Ethiopia help power the global economy.
               </p>
               <Link href="/contact">
                 <Button size="lg" data-testid="button-book-consultation">
@@ -388,8 +371,7 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Comprehensive technology services tailored to accelerate your
-              business growth
+              As a leading IT solutions provider Ethiopia, we offer comprehensive technology services including custom software development, web development, mobile app development, cloud solutions, ERP software development, and SaaS applications tailored to accelerate your business growth
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -960,8 +942,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Let's discuss how Gedeb Technologies can help you achieve your
-            technology goals. Our team of experts is ready to partner with you.
+            Looking to hire software developers in Ethiopia? Let's discuss how Gedeb Technologies, as a premier technology company in Ethiopia, can help you achieve your digital transformation goals. Our team of experts is ready to partner with you.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact">
