@@ -5,7 +5,7 @@ interface BotResponse {
 
 const responses: Record<string, BotResponse> = {
   services: {
-    content: `Gedeb Technologies offers comprehensive BPO and software development services:\n\n• **BPO Services**: Customer support, data entry, back-office operations\n• **Software Development**: Custom web & mobile applications\n• **Cloud Solutions**: Infrastructure setup and management\n• **AI & Automation**: Intelligent process automation\n• **Cybersecurity**: Security audits and protection\n• **IT Consulting**: Strategic technology guidance\n\nWould you like to learn more about any specific service?`,
+    content: `wODEB Technologies offers comprehensive BPO and software development services:\n\n• **BPO Services**: Customer support, data entry, back-office operations\n• **Software Development**: Custom web & mobile applications\n• **Cloud Solutions**: Infrastructure setup and management\n• **AI & Automation**: Intelligent process automation\n• **Cybersecurity**: Security audits and protection\n• **IT Consulting**: Strategic technology guidance\n\nWould you like to learn more about any specific service?`,
     quickReplies: ["BPO Services details", "Software Development", "View our projects", "Contact the team"],
   },
   bpo: {
@@ -25,7 +25,7 @@ const responses: Record<string, BotResponse> = {
     quickReplies: ["View Industries page", "Tell me about your services", "Contact sales"],
   },
   contact: {
-    content: `You can reach Gedeb Technologies through:\n\n• **Email**: info@aittechworld.com\n• **Phone**: Available via the contact options below\n• **Office**: Addis Ababa, Ethiopia\n\nOr use the quick contact buttons below to connect instantly.`,
+    content: `You can reach wODEB Technologies through:\n\n• **Email**: info@aittechworld.com\n• **Phone**: Available via the contact options below\n• **Office**: Addis Ababa, Ethiopia\n\nOr use the quick contact buttons below to connect instantly.`,
     quickReplies: ["Submit a message", "Request a callback", "View office location"],
   },
   hiring: {
@@ -37,7 +37,7 @@ const responses: Record<string, BotResponse> = {
     quickReplies: ["Yes, get a quote", "Talk to sales directly", "More about services"],
   },
   careers: {
-    content: `Join the Gedeb Technologies team!\n\nWe're always looking for talented professionals:\n• Software Engineers\n• Project Managers\n• BPO Specialists\n• UI/UX Designers\n• DevOps Engineers\n\nVisit our Careers page to view open positions.`,
+    content: `Join the wODEB Technologies team!\n\nWe're always looking for talented professionals:\n• Software Engineers\n• Project Managers\n• BPO Specialists\n• UI/UX Designers\n• DevOps Engineers\n\nVisit our Careers page to view open positions.`,
     quickReplies: ["View Careers page", "Company culture", "Benefits we offer"],
   },
   default: {

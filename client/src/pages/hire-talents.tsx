@@ -199,7 +199,7 @@ export default function HireTalents() {
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Scale your team with pre-vetted developers, designers, and engineers from 
-              Gedeb Technologies. We provide flexible engagement models to match your needs.
+              wODEB Technologies. We provide flexible engagement models to match your needs.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">

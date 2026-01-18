@@ -186,7 +186,7 @@ export default function Home() {
               <span className="text-primary-foreground"> Technology</span> Today
             </h1>
             <p className="text-lg lg:text-xl text-white/80 mb-8 leading-relaxed">
-              Gedeb Technologies delivers innovative, scalable software
+              wODEB Technologies delivers innovative, scalable software
               solutions that drive digital transformation for enterprises,
               governments, and startups worldwide.
             </p>
@@ -228,13 +228,13 @@ export default function Home() {
             </div>
             <div>
               <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
-                About Gedeb
+                About wODEB
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-6">
                 Accelerating Growth with BPO
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Gedeb Technologies is a trusted Business Process Outsourcing
+                wODEB Technologies is a trusted Business Process Outsourcing
                 (BPO) partner, helping organizations streamline operations and
                 enhance efficiency. We specialize in providing top-tier customer
                 support, data management, IT services, and back-office
@@ -260,7 +260,7 @@ export default function Home() {
                 className="mb-6 text-primary border-primary/30"
               >
                 <Zap className="h-3 w-3 mr-1" />
-                Gedeb Technology
+                wODEB Technology
               </Badge>
               <h2 className="font-serif text-3xl lg:text-5xl font-bold mb-6">
                 We Build{" "}
@@ -354,7 +354,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At Gedeb Technologies, our mission goes beyond traditional
+                At wODEB Technologies, our mission goes beyond traditional
                 software solutions. We are dedicated to creating impactful
                 opportunities by drastically reducing unemployment across
                 Ethiopia, while delivering exceptional, cost-effective services
@@ -960,7 +960,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Let's discuss how Gedeb Technologies can help you achieve your
+            Let's discuss how wODEB Technologies can help you achieve your
             technology goals. Our team of experts is ready to partner with you.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

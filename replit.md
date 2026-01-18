@@ -1,8 +1,8 @@
-# Gedeb Technologies Website
+# wODEB Technologies Website
 
 ## Overview
 
-This is a professional enterprise-grade software company website for Gedeb Technologies, a software development and technology services company. The website showcases services, projects, industries served, and provides lead generation functionality through contact forms and talent hiring features. The platform is designed to communicate technical excellence and trust to enterprise, government, and startup clients.
+This is a professional enterprise-grade software company website for wODEB Technologies, a software development and technology services company. The website showcases services, projects, industries served, and provides lead generation functionality through contact forms and talent hiring features. The platform is designed to communicate technical excellence and trust to enterprise, government, and startup clients.
 
 ## User Preferences
 

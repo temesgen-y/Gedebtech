@@ -35,7 +35,7 @@ export function Footer() {
             >
               <img
                 src={logoImage}
-                alt="GedebTech Solutions"
+                alt="wODEBTech Solutions"
                 className="h-20 w-auto"
               />
             </Link>
@@ -160,7 +160,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Gedeb Technologies. All rights
+            &copy; {new Date().getFullYear()} wODEB Technologies. All rights
             reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">

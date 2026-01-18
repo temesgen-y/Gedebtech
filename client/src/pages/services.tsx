@@ -137,7 +137,7 @@ export default function Services() {
             data-testid="text-services-page-title"
           >
             Revolutionize Your Business{" "}
-            <span className="text-primary">with Gedeb Technologies</span>
+            <span className="text-primary">with wODEB Technologies</span>
           </h1>
           <p className="text-muted-foreground text-lg">
             Elevate your business with our diverse BPO services – where quality

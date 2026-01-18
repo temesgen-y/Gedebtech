@@ -49,7 +49,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-2" data-testid="link-logo">
             <img 
               src={logoImage} 
-              alt="GedebTech Solutions" 
+              alt="wODEBTech Solutions" 
               className="h-20 w-auto"
             />
           </Link>

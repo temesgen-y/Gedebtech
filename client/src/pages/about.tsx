@@ -166,14 +166,14 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "GedebTech is one amazing technology company. They're highly intelligent people and still have good people skills, which makes them easy (and fun) to work with. They are the definition of professionalism. SEO, Software Development, Cyber security, and Software as a services(SAS) Provider.",
+      "wODEBTech is one amazing technology company. They're highly intelligent people and still have good people skills, which makes them easy (and fun) to work with. They are the definition of professionalism. SEO, Software Development, Cyber security, and Software as a services(SAS) Provider.",
     client: "The Nest Hotel",
     image: teamMale1,
   },
   {
     id: 2,
     quote:
-      "Working with GedebTech transformed our business operations. Their team delivered a custom ERP solution that exceeded our expectations. The attention to detail and commitment to quality is unmatched.",
+      "Working with wODEBTech transformed our business operations. Their team delivered a custom ERP solution that exceeded our expectations. The attention to detail and commitment to quality is unmatched.",
     client: "Ethiopian Airlines",
     image: teamFemale1,
   },
@@ -187,14 +187,14 @@ const testimonials = [
   {
     id: 4,
     quote:
-      "GedebTech's cybersecurity solutions gave us peace of mind. Their expertise in protecting our digital assets while maintaining seamless user experience is truly remarkable.",
+      "wODEBTech's cybersecurity solutions gave us peace of mind. Their expertise in protecting our digital assets while maintaining seamless user experience is truly remarkable.",
     client: "Ethio Telecom",
     image: teamFemale2,
   },
   {
     id: 5,
     quote:
-      "From concept to deployment, the GedebTech team demonstrated exceptional skill and dedication. They don't just build software, they build partnerships that last.",
+      "From concept to deployment, the wODEBTech team demonstrated exceptional skill and dedication. They don't just build software, they build partnerships that last.",
     client: "Awash Bank",
     image: teamMale3,
   },
@@ -204,7 +204,7 @@ const milestones = [
   {
     year: "2014",
     title: "Company Founded",
-    description: "Gedeb Technologies established in Addis Ababa",
+    description: "wODEB Technologies established in Addis Ababa",
   },
   {
     year: "2016",
@@ -352,7 +352,7 @@ export default function About() {
                 Driving Digital Innovation Since 2014
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Gedeb Technologies is a leading software development company
+                wODEB Technologies is a leading software development company
                 based in Ethiopia, delivering world-class technology solutions
                 to clients across the globe. Our team of skilled engineers,
                 designers, and strategists work together to transform businesses
@@ -368,7 +368,7 @@ export default function About() {
             <div className="relative">
               <img
                 src={aboutImage}
-                alt="Gedeb Technologies Team"
+                alt="wODEB Technologies Team"
                 className="rounded-md w-full aspect-[4/3] object-cover"
               />
             </div>
@@ -388,13 +388,13 @@ export default function About() {
             </div>
             <div>
               <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
-                About Gedeb
+                About wODEB
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-6">
                 Driving Business Growth with BPO Excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Gedeb Technologies is a trusted Business Process Outsourcing
+                wODEB Technologies is a trusted Business Process Outsourcing
                 (BPO) partner, helping businesses streamline operations and
                 boost efficiency. We specialize in customer support, back-office
                 management, data processing, and IT-enabled services, allowing
@@ -416,7 +416,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-4">
             Revolutionize Your Business{" "}
-            <span className="text-primary">with Gedeb Technologies</span>
+            <span className="text-primary">with wODEB Technologies</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Elevate your business with our diverse BPO services – where quality
@@ -462,7 +462,7 @@ export default function About() {
                 <span className="text-primary">Bridging Global Gaps</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At Gedeb Technologies, our mission goes beyond traditional
+                At wODEB Technologies, our mission goes beyond traditional
                 software solutions. We are dedicated to creating impactful
                 opportunities by drastically reducing unemployment across
                 Ethiopia, while delivering exceptional, cost-effective services
@@ -768,7 +768,7 @@ export default function About() {
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
             We're always looking for talented individuals to join our growing
-            team. Explore career opportunities at Gedeb Technologies.
+            team. Explore career opportunities at wODEB Technologies.
           </p>
           <Link href="/careers">
             <Button
