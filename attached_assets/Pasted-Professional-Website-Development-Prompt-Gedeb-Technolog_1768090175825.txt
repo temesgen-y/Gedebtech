@@ -1,0 +1,146 @@
+Professional Website Development Prompt – Gedeb Technologies
+
+Act as a Senior Frontend Architect and UI/UX Designer.
+Design and build a modern, enterprise-grade software company website for Gedeb Technologies using the latest industry standards.
+
+Company Overview
+
+Company Name: Gedeb Technologies
+Industry: Software Development & Technology Services
+Brand Positioning: Innovative, reliable, scalable, enterprise-ready
+
+The website must communicate technical excellence, trust, and modern innovation, suitable for enterprise, government, and startup clients.
+
+Technology Stack (Strictly Enforced)
+
+Framework: Next.js (latest stable, App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS + ShadCN/UI
+
+Rendering: Server-Side Rendering (SSR) & Static Site Generation (SSG)
+
+SEO: Optimized metadata per page
+
+Accessibility: WCAG 2.1 compliance
+
+Performance: Optimized images, lazy loading, Core Web Vitals
+
+CMS-ready: Headless CMS compatible (Sanity / Strapi)
+
+Website Objectives
+
+Present Gedeb Technologies as a professional, modern software company
+
+Generate leads and client inquiries
+
+Showcase services, projects, and industries served
+
+Support future SaaS or client portal expansion
+
+Pages & Structure
+1. Home
+
+Hero section with a strong value proposition for Gedeb Technologies
+
+Primary CTAs: Contact Us, Hire Talents
+
+Overview of core services
+
+Industries served
+
+Featured projects / case studies
+
+Trust indicators (experience, expertise, technology focus)
+
+2. Services
+
+Modular service cards
+
+Detailed service descriptions
+
+Scalable layout for future services
+
+3. About Us
+
+Company mission, vision, and values
+
+Overview of Gedeb Technologies’ expertise
+
+Professional and credible tone
+
+4. Projects
+
+Portfolio or case studies grid
+
+Individual project detail structure
+
+Filterable categories
+
+5. Industries
+
+Industry-specific solution sections
+
+Clear value proposition per industry
+
+6. Blog
+
+SEO-friendly blog listing page
+
+Dynamic blog post pages
+
+CMS-ready routing and data structure
+
+7. Career
+
+Job listings layout
+
+Benefits of working at Gedeb Technologies
+
+Clear application CTA
+
+8. Hire Talents
+
+Talent categories (Developers, Engineers, Designers, DevOps, etc.)
+
+Engagement models (contract, dedicated teams)
+
+Lead generation CTA
+
+9. Contact
+
+Professional contact form with validation
+
+Business contact details
+
+Accessibility and usability best practices
+
+Technical & Design Requirements
+
+Use Next.js App Router
+
+Component-based architecture
+
+Clean, scalable folder structure
+
+Reusable UI components
+
+Mobile-first responsive design
+
+No placeholder-only output — generate working production-ready code
+
+Deliverables
+
+Fully functional Next.js project
+
+Tailwind CSS + ShadCN/UI configured
+
+Professional enterprise UI/UX
+
+Ready for deployment on Vercel
+
+Easy future integration with backend services and CMS
+
+Do NOT use WordPress, PHP, or plain MERN.
+Follow modern enterprise frontend engineering standards only.
