@@ -15,7 +15,7 @@ import {
   CheckCircle2,
   Users,
 } from "lucide-react";
-
+<h2>Elevate your business with our diverse BPO services – where quality meets affordability.</h2>
 const services = [
 
   {
