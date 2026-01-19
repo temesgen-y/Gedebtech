@@ -19,18 +19,6 @@ import {
 const services = [
   {
     icon: Code2,
-    title: "Custom Software Development",
-    description:
-      "We build bespoke software solutions tailored to your unique business needs, from initial concept through deployment and maintenance.",
-    features: [
-      "Requirements analysis and system design",
-      "Agile development methodology",
-      "Quality assurance and testing",
-      "Ongoing support and maintenance",
-    ],
-  },
-  {
-    icon: Code2,
     title: "AI Solutions",
     description:
       "We build bespoke software solutions tailored to your unique business needs, from initial concept through deployment and maintenance.",
@@ -41,6 +29,32 @@ const services = [
       "Ongoing support and maintenance",
     ],
   },
+
+  {
+    icon: Cpu,
+    title: "AI & Machine Learning",
+    description:
+      "Leverage artificial intelligence and machine learning to automate processes and gain valuable insights from your data.",
+    features: [
+      "Predictive analytics models",
+      "Natural language processing",
+      "Computer vision solutions",
+      "AI-powered automation",
+    ],
+  },
+  {
+    icon: Code2,
+    title: "Custom Software Development",
+    description:
+      "We build bespoke software solutions tailored to your unique business needs, from initial concept through deployment and maintenance.",
+    features: [
+      "Requirements analysis and system design",
+      "Agile development methodology",
+      "Quality assurance and testing",
+      "Ongoing support and maintenance",
+    ],
+  },
+
   {
     icon: Globe,
     title: "Web Application Development",
@@ -101,18 +115,7 @@ const services = [
       "24/7 monitoring and alerting",
     ],
   },
-  {
-    icon: Cpu,
-    title: "AI & Machine Learning",
-    description:
-      "Leverage artificial intelligence and machine learning to automate processes and gain valuable insights from your data.",
-    features: [
-      "Predictive analytics models",
-      "Natural language processing",
-      "Computer vision solutions",
-      "AI-powered automation",
-    ],
-  },
+
   {
     icon: Layers,
     title: "API Development & Integration",
