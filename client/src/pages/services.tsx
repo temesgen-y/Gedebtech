@@ -30,6 +30,20 @@ const services = [
       "AI-powered automation",
     ],
   },
+
+  {
+    icon: Cpu,
+    title: "BPO -Business Process Outsourcing",
+    description:
+      "Our organization provides Offshore outsourcing, Onshore outsourcing, Nearshore outsourcing, and Hybrid outsourcing services to help businesses achieve their goals.",
+    features: [
+      "Finance & Accounting (F&A) Outsourcing",
+      "Human Resources Outsourcing (HRO)",
+      "Healthcare BPO",
+      "Sales & Marketing Support",
+      "Information Technology Enabled Services (ITES)"
+    ],
+  },
   {
     icon: Code2,
     title: "Custom Software Development",
