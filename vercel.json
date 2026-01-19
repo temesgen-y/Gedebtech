@@ -5,16 +5,7 @@
   "installCommand": "npm install",
   "cleanUrls": true,
   "trailingSlash": false,
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "rewrites": [
-    {
-      "source": "/api/contact",
-      "destination": "/api/contact"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
