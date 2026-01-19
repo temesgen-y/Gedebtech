@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -148,7 +149,54 @@ const stats = [
 
 import { SEO } from "@/components/seo";
 
+// Rotating hero content
+const heroContent = [
+  {
+    headline: ["Leading Software Development Company in Ethiopia"],
+    paragraph: "Gedeb Technologies, also known as Gedeb Tech, is a premier IT company in Ethiopia, delivering custom software development, web & mobile app development, cloud solutions, ERP systems, and SaaS applications. As a trusted technology company in Addis Ababa, we provide comprehensive IT solutions for businesses seeking digital transformation."
+  },
+  {
+    headline: ["Transform Your Business", "with Cutting-Edge Technology"],
+    paragraph: "Partner with Gedeb Technologies to accelerate your digital transformation. Our expert team delivers scalable software solutions, cloud infrastructure, and innovative applications that drive growth and efficiency for businesses across Ethiopia and beyond."
+  },
+  {
+    headline: ["Expert IT Solutions", "Tailored to Your Needs"],
+    paragraph: "From custom software development to enterprise solutions, we provide end-to-end IT services. Our team specializes in web applications, mobile apps, cloud migration, data engineering, and DevOps practices to ensure your business stays ahead of the competition."
+  },
+  {
+    headline: ["Innovation, Quality,", "and Reliability Delivered"],
+    paragraph: "With over 10 years of experience and 200+ successful projects, Gedeb Technologies combines technical expertise with business acumen. We deliver high-quality software solutions with exceptional support, helping Ethiopian businesses achieve their technology goals."
+  },
+  {
+    headline: ["Streamlining Your BPO Operations"],
+    paragraph: "Our Business Process Outsourcing services deliver cost-effective, scalable solutions for customer support, data management, and back-office operations."
+  },
+];
+
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Start fade-out animation
+      setIsAnimating(true);
+      
+      // Wait for fade-out to complete (500ms), then change content and fade in
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % heroContent.length);
+        // Small delay to ensure content update, then start fade-in
+        setTimeout(() => {
+          setIsAnimating(false);
+        }, 50);
+      }, 500); // Half of transition duration (500ms)
+    }, 4000); // Change every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentContent = heroContent[currentIndex];
+
   return (
     <Layout>
       <SEO
@@ -206,15 +254,36 @@ export default function Home() {
             >
               Enterprise Software Solutions
             </Badge>
-            <h1
-              className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
-              data-testid="text-hero-title"
-            >
-              Leading Software Development Company in Ethiopia
-            </h1>
-            <p className="text-lg lg:text-xl text-white/80 mb-8 leading-relaxed">
-              Gedeb Technologies, also known as Gedeb Tech, is a premier IT company in Ethiopia, delivering custom software development, web & mobile app development, cloud solutions, ERP systems, and SaaS applications. As a trusted technology company in Addis Ababa, we provide comprehensive IT solutions for businesses seeking digital transformation.
-            </p>
+            <div className="relative mb-6 min-h-[120px] lg:min-h-[180px] overflow-hidden">
+              <h1
+                key={currentIndex}
+                className={`font-serif text-4xl lg:text-6xl font-bold text-white leading-tight transition-all duration-500 ${
+                  isAnimating
+                    ? "opacity-0 -translate-y-8"
+                    : "opacity-100 translate-y-0"
+                }`}
+                data-testid="text-hero-title"
+              >
+                {currentContent.headline.map((part, idx) => (
+                  <span key={idx}>
+                    {part}
+                    {idx < currentContent.headline.length - 1 && <br />}
+                  </span>
+                ))}
+              </h1>
+            </div>
+            <div className="relative mb-8 min-h-[80px] lg:min-h-[100px] overflow-hidden">
+              <p
+                key={currentIndex}
+                className={`text-lg lg:text-xl text-white/80 leading-relaxed transition-all duration-500 ${
+                  isAnimating
+                    ? "opacity-0 translate-y-8"
+                    : "opacity-100 translate-y-0"
+                }`}
+              >
+                {currentContent.paragraph}
+              </p>
+            </div>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
                 <Button
