@@ -130,6 +130,20 @@ const services = [
       "Microservices architecture",
     ],
   },
+
+  {
+    icon: Layers,
+    title: "Quality Assurance /IT Audit Service",
+    description:
+      "AFRCOM provides IT audit services which aims to examine and evaluate an organization’s information technology infrastructure, policies and operations. The service covers the process of collecting and evaluating evidence to determine whether a computer system safeguards assets, maintains data integrity, allows organizational goals to be achieved effectively and uses resources efficiently",
+    features: [
+      "Software Testing & Quality Engineering",
+      "Test Automation Services",
+      "Performance & Reliability Testing",
+      "Data Quality Assurance",
+      "Process Quality Assurance",
+    ],
+  },
 ];
 
 import { SEO } from "@/components/seo";
