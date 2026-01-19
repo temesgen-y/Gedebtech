@@ -1,5 +1,6 @@
 import { type User, type InsertUser, type InsertContact, type ContactMessage, type BlogPost, type JobListing, type Project } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { supabase } from "./supabase";
 
 const blogPostsData: BlogPost[] = [
   {
@@ -200,6 +201,35 @@ export class MemStorage implements IStorage {
   }
 
   async createContactMessage(data: InsertContact): Promise<ContactMessage> {
+    // Use Supabase if configured, otherwise fall back to in-memory storage
+    if (supabase) {
+      const { data: message, error } = await supabase
+        .from("contact_messages")
+        .insert({
+          name: data.name,
+          email: data.email,
+          company: data.company || null,
+          message: data.message,
+        })
+        .select()
+        .single();
+
+      if (error) {
+        console.error("Supabase error creating contact message:", error);
+        throw new Error(`Failed to create contact message: ${error.message}`);
+      }
+
+      return {
+        id: message.id,
+        name: message.name,
+        email: message.email,
+        company: message.company || undefined,
+        message: message.message,
+        createdAt: message.created_at ? new Date(message.created_at) : new Date(),
+      };
+    }
+
+    // Fallback to in-memory storage
     const id = randomUUID();
     const message: ContactMessage = {
       ...data,
@@ -211,6 +241,29 @@ export class MemStorage implements IStorage {
   }
 
   async getContactMessages(): Promise<ContactMessage[]> {
+    // Use Supabase if configured, otherwise fall back to in-memory storage
+    if (supabase) {
+      const { data: messages, error } = await supabase
+        .from("contact_messages")
+        .select("*")
+        .order("created_at", { ascending: false });
+
+      if (error) {
+        console.error("Supabase error fetching contact messages:", error);
+        throw new Error(`Failed to fetch contact messages: ${error.message}`);
+      }
+
+      return (messages || []).map((msg) => ({
+        id: msg.id,
+        name: msg.name,
+        email: msg.email,
+        company: msg.company || undefined,
+        message: msg.message,
+        createdAt: msg.created_at ? new Date(msg.created_at) : new Date(),
+      }));
+    }
+
+    // Fallback to in-memory storage
     return Array.from(this.contactMessages.values()).sort((a, b) => {
       const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
       const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
