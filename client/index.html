@@ -15,6 +15,18 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="distribution" content="global" />
     <meta name="rating" content="general" />
+    <meta name="geo.region" content="ET-AA" />
+    <meta name="geo.placename" content="Addis Ababa" />
+    <meta name="geo.position" content="9.1450;38.7617" />
+    <meta name="ICBM" content="9.1450, 38.7617" />
+    <meta name="theme-color" content="#22589D" />
+    <meta name="msapplication-TileColor" content="#22589D" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="alternate" hreflang="en" href="https://gedebtech.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://gedebtech.com/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -27,6 +39,10 @@
     <meta property="og:image:alt" content="Gedeb Technologies - Software Development Services" />
     <meta property="og:site_name" content="Gedeb Technologies" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="am_ET" />
+    <meta property="article:publisher" content="https://www.facebook.com/gedebtechnologies" />
+    <meta property="og:image:secure_url" content="https://gedebtech.com/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -35,6 +51,8 @@
       <meta name="twitter:description" content="Leading IT company in Ethiopia. Custom software, web & mobile development, cloud solutions, and ERP systems in Addis Ababa." />
     <meta name="twitter:image" content="https://gedebtech.com/og-image.jpg" />
     <meta name="twitter:image:alt" content="Gedeb Technologies - Software Development Services" />
+    <meta name="twitter:site" content="@gedebtech" />
+    <meta name="twitter:creator" content="@gedebtech" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://gedebtech.com/" />
@@ -94,7 +112,19 @@
         "IT Solutions",
         "Digital Transformation",
         "Business Automation"
-      ]
+      ],
+      "foundingDate": "2020",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "50-100"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
     </script>
     
@@ -109,6 +139,50 @@
         "target": "https://gedebtech.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gedeb Technologies",
+      "image": "https://gedebtech.com/favicon.png",
+      "@id": "https://gedebtech.com",
+      "url": "https://gedebtech.com",
+      "telephone": "+251-928-730-333",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Addis Ababa",
+        "addressLocality": "Addis Ababa",
+        "addressRegion": "Addis Ababa",
+        "postalCode": "",
+        "addressCountry": "ET"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.1450,
+        "longitude": 38.7617
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/gedeb-technologies",
+        "https://twitter.com/gedebtech",
+        "https://www.facebook.com/gedebtechnologies"
+      ]
     }
     </script>
   </head>

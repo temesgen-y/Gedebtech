@@ -61,6 +61,8 @@ const contactInfo = [
   },
 ];
 
+import { SEO } from "@/components/seo";
+
 export default function Contact() {
   const { toast } = useToast();
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -101,6 +103,41 @@ export default function Contact() {
 
   return (
     <Layout>
+      <SEO
+        title="Contact Us - Software Development Company in Ethiopia | Gedeb Technologies"
+        description="Get in touch with Gedeb Technologies for custom software development, web & mobile apps, cloud solutions, and IT services in Ethiopia. Located in Addis Ababa."
+        keywords="contact Gedeb Technologies, software development company contact, IT services Ethiopia contact, Addis Ababa IT company"
+        url="/contact"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact Us", url: "/contact" },
+        ]}
+        localBusiness={{
+          name: "Gedeb Technologies",
+          address: {
+            addressLocality: "Addis Ababa",
+            addressRegion: "Addis Ababa",
+            addressCountry: "ET",
+          },
+          telephone: "+251 928 730 333",
+          openingHours: ["Mo-Fr 09:00-18:00"],
+        }}
+        faq={[
+          {
+            question: "How can I contact Gedeb Technologies?",
+            answer: "You can contact us via email at info@gedebtech.com, phone at +251 928 730 333, or fill out the contact form on this page. We're located in Addis Ababa, Ethiopia.",
+          },
+          {
+            question: "What are your business hours?",
+            answer: "Our business hours are Monday to Friday, 9:00 AM to 6:00 PM (EAT - East Africa Time).",
+          },
+          {
+            question: "Do you provide services outside Ethiopia?",
+            answer: "Yes, while we're based in Ethiopia, we provide software development and IT services to clients internationally.",
+          },
+        ]}
+      />
       <section className="relative py-24 lg:py-32 border-b border-border overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-card to-primary/15 dark:from-primary/15 dark:via-card dark:to-primary/10" />
         <div className="absolute inset-0 animate-gradient-flow opacity-70" />

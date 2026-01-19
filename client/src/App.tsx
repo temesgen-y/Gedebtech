@@ -12,6 +12,7 @@ import Industries from "@/pages/industries";
 import Careers from "@/pages/careers";
 import HireTalents from "@/pages/hire-talents";
 import Contact from "@/pages/contact";
+import AdminMessages from "@/pages/admin-messages";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/careers" component={Careers} />
       <Route path="/hire-talents" component={HireTalents} />
       <Route path="/contact" component={Contact} />
+      <Route path="/admin/messages" component={AdminMessages} />
       <Route component={NotFound} />
     </Switch>
   );

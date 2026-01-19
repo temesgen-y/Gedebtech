@@ -319,9 +319,32 @@ function TestimonialsSection() {
   );
 }
 
+import { SEO } from "@/components/seo";
+
 export default function About() {
   return (
     <Layout>
+      <SEO
+        title="About Us - Leading IT Company in Ethiopia | Gedeb Technologies"
+        description="Learn about Gedeb Technologies, a premier software development company in Ethiopia. Our team delivers innovative IT solutions, custom software, and digital transformation services in Addis Ababa."
+        keywords="about Gedeb Technologies, IT company Ethiopia, software development team Ethiopia, technology company Addis Ababa, IT solutions provider Ethiopia"
+        url="/about"
+        type="organization"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about" },
+        ]}
+        organization={{
+          name: "Gedeb Technologies",
+          url: "https://gedebtech.com",
+          logo: "https://gedebtech.com/favicon.png",
+          sameAs: [
+            "https://www.linkedin.com/company/gedeb-technologies",
+            "https://twitter.com/gedebtech",
+            "https://www.facebook.com/gedebtechnologies",
+          ],
+        }}
+      />
       <section className="py-12 lg:py-16 bg-primary">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="font-serif text-2xl lg:text-3xl font-bold text-primary-foreground mb-3">

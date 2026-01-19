@@ -99,6 +99,8 @@ const projects = [
   },
 ];
 
+import { SEO } from "@/components/seo";
+
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -109,6 +111,17 @@ export default function Projects() {
 
   return (
     <Layout>
+      <SEO
+        title="Our Projects & Portfolio - Software Development in Ethiopia | Gedeb Technologies"
+        description="Explore our portfolio of successful software development projects in Ethiopia. Custom software, web & mobile apps, ERP systems, and cloud solutions delivered to clients across industries."
+        keywords="Gedeb Technologies projects, software development portfolio Ethiopia, IT projects Ethiopia, web development projects, mobile app projects Ethiopia"
+        url="/projects"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Projects", url: "/projects" },
+        ]}
+      />
       <section className="py-16 lg:py-20 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">

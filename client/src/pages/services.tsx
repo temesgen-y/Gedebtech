@@ -127,9 +127,43 @@ const services = [
   },
 ];
 
+import { SEO } from "@/components/seo";
+
 export default function Services() {
   return (
     <Layout>
+      <SEO
+        title="IT Services & Solutions in Ethiopia - Gedeb Technologies"
+        description="Comprehensive technology solutions in Ethiopia: custom software development, web & mobile apps, cloud migration, ERP systems, and digital transformation services."
+        keywords="IT services Ethiopia, software development services, web development services Ethiopia, mobile app development services, cloud solutions Ethiopia, ERP implementation Ethiopia, digital transformation services"
+        url="/services"
+        type="service"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+        ]}
+        service={{
+          name: "IT Services & Solutions",
+          description: "Comprehensive technology solutions including custom software development, web & mobile apps, cloud migration, and ERP systems.",
+          provider: "Gedeb Technologies",
+          areaServed: "Ethiopia",
+          serviceType: "Software Development, Web Development, Mobile App Development, Cloud Solutions, ERP Systems",
+        }}
+        faq={[
+          {
+            question: "What IT services does Gedeb Technologies offer?",
+            answer: "We offer custom software development, web & mobile app development, cloud solutions, ERP systems, SaaS applications, and digital transformation services.",
+          },
+          {
+            question: "Where is Gedeb Technologies located?",
+            answer: "Gedeb Technologies is located in Addis Ababa, Ethiopia, serving clients across the country and internationally.",
+          },
+          {
+            question: "What industries do you serve?",
+            answer: "We serve healthcare, finance, manufacturing, retail, education, and government sectors with industry-specific solutions.",
+          },
+        ]}
+      />
       <section className="py-16 lg:py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h1

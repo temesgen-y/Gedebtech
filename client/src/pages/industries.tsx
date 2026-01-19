@@ -104,9 +104,22 @@ const industries = [
   },
 ];
 
+import { SEO } from "@/components/seo";
+
 export default function Industries() {
   return (
     <Layout>
+      <SEO
+        title="Industry-Specific IT Solutions in Ethiopia | Gedeb Technologies"
+        description="Industry-specific software solutions for healthcare, finance, manufacturing, retail, education, and government sectors in Ethiopia. Custom IT solutions tailored to your industry needs."
+        keywords="industry IT solutions Ethiopia, healthcare software Ethiopia, fintech solutions Ethiopia, manufacturing software, retail technology solutions, education software Ethiopia"
+        url="/industries"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/industries" },
+        ]}
+      />
       <section className="py-16 lg:py-20 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">

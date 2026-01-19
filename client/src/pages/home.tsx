@@ -146,9 +146,37 @@ const stats = [
   { icon: TrendingUp, value: "98%", label: "Client Satisfaction" },
 ];
 
+import { SEO } from "@/components/seo";
+
 export default function Home() {
   return (
     <Layout>
+      <SEO
+        title="Software Development Company in Ethiopia - Gedeb Technologies"
+        description="Leading software development company in Ethiopia. Custom software, web & mobile apps, ERP/LMS/CRM systems, cloud solutions, and SaaS development. IT company in Addis Ababa."
+        keywords="Gedeb technologies, Gedeb Tech, software development company in Ethiopia, IT company in Ethiopia, custom software development Ethiopia, web development company in Ethiopia, mobile app development Ethiopia, cloud solutions Ethiopia, SaaS application development, ERP software development Ethiopia, technology company in Ethiopia, software company in Addis Ababa, IT solutions provider Ethiopia, business automation solutions Ethiopia, digital transformation Ethiopia, hire software developers in Ethiopia"
+        url="/"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+        ]}
+        localBusiness={{
+          name: "Gedeb Technologies",
+          address: {
+            addressLocality: "Addis Ababa",
+            addressRegion: "Addis Ababa",
+            addressCountry: "ET",
+          },
+          telephone: "+251 928 730 333",
+          openingHours: ["Mo-Fr 09:00-18:00"],
+        }}
+        review={{
+          ratingValue: 4.8,
+          bestRating: 5,
+          worstRating: 1,
+          reviewCount: 150,
+        }}
+      />
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-primary" />
         <div
