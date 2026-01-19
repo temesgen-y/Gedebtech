@@ -17,18 +17,6 @@ import {
 } from "lucide-react";
 
 const services = [
-  {
-    icon: Code2,
-    title: "AI Solutions",
-    description:
-      "We build bespoke software solutions tailored to your unique business needs, from initial concept through deployment and maintenance.",
-    features: [
-      "Requirements analysis and system design",
-      "Agile development methodology",
-      "Quality assurance and testing",
-      "Ongoing support and maintenance",
-    ],
-  },
 
   {
     icon: Cpu,
