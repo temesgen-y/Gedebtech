@@ -118,9 +118,9 @@ const team = [
     twitter: "https://twitter.com/",
   },
   {
-    name: "Rahel Assefa",
+    name: "Tsega Amare",
     role: "Senior Developer",
-    initials: "RA",
+    initials: "TA",
     image: undefined,
     linkedin: "https://linkedin.com/in/",
     twitter: "https://twitter.com/",
