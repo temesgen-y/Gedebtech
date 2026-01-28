@@ -74,7 +74,18 @@ const values = [
   },
 ];
 
-const team = [
+type TeamMember = {
+  name: string;
+  role: string;
+  initials: string;
+  image: string | undefined;
+  imagePosition?: string;
+  imageSize?: number;
+  linkedin: string;
+  twitter: string;
+};
+
+const team: TeamMember[] = [
   {
     name: "Abas Usman",
     role: "CEO & Founder",
