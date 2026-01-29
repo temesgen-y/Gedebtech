@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Layout } from "@/components/layout";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
+import { supabaseAnonOnly } from "@/lib/supabase";
 import {
   Form,
   FormControl,
@@ -81,7 +81,17 @@ export default function Contact() {
 
   const mutation = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
+      if (!supabaseAnonOnly) {
+        throw new Error("Contact form is not configured. Please set up Supabase.");
+      }
+      const { error } = await supabaseAnonOnly.from("contact_messages").insert({
+        name: data.name,
+        email: data.email,
+        subject: data.Subject,
+        message: data.message,
+        company: data.company || null,
+      });
+      if (error) throw error;
     },
     onSuccess: () => {
       setIsSubmitted(true);
@@ -90,10 +100,10 @@ export default function Contact() {
         description: "We'll get back to you as soon as possible.",
       });
     },
-    onError: () => {
+    onError: (err: Error) => {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: err.message || "Something went wrong. Please try again.",
         variant: "destructive",
       });
     },
@@ -249,7 +259,7 @@ export default function Contact() {
                           )}
                         />
 
-<FormField
+                        <FormField
                           control={form.control}
                           name="company"
                           render={({ field }) => (

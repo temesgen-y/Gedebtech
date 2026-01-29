@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import { CookieConsent } from "@/components/cookie-consent";
+import { AuthProvider } from "@/contexts/auth-context";
+import { ProtectedAdminRoute } from "@/components/protected-admin-route";
 import Home from "@/pages/home";
 import Services from "@/pages/services";
 import About from "@/pages/about";
@@ -15,6 +17,7 @@ import HireTalents from "@/pages/hire-talents";
 import Contact from "@/pages/contact";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import AdminMessages from "@/pages/admin-messages";
+import Login from "@/pages/login";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -29,7 +32,12 @@ function Router() {
       <Route path="/hire-talents" component={HireTalents} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
-      <Route path="/admin/messages" component={AdminMessages} />
+      <Route path="/login" component={Login} />
+      <Route path="/admin/messages">
+        <ProtectedAdminRoute>
+          <AdminMessages />
+        </ProtectedAdminRoute>
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );
@@ -39,11 +47,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-          <CookieConsent />
-        </TooltipProvider>
+        <AuthProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+            <CookieConsent />
+          </TooltipProvider>
+        </AuthProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );

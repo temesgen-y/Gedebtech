@@ -3,14 +3,9 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useTheme } from "@/components/theme-provider";
-import { Menu, X, Sun, Moon, ChevronDown } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Menu, Sun, Moon, LogOut, LayoutDashboard } from "lucide-react";
 import { Logo } from "./logo";
+import { useAuth } from "@/contexts/auth-context";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -23,10 +18,16 @@ const navLinks = [
 ];
 
 export function Navigation() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const { theme, toggleTheme } = useTheme();
+  const { user, isAdmin, signOut } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleLogout = async () => {
+    await signOut();
+    setLocation("/login");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,6 +83,27 @@ export function Navigation() {
               )}
             </Button>
 
+            {user && isAdmin && (
+              <>
+                <Link href="/admin/messages" className="hidden lg:block">
+                  <Button variant="outline" size="sm" className="gap-1.5">
+                    <LayoutDashboard className="h-4 w-4" />
+                    Admin
+                  </Button>
+                </Link>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="hidden lg:flex gap-1.5 text-muted-foreground hover:text-foreground"
+                  onClick={handleLogout}
+                  data-testid="button-nav-logout"
+                >
+                  <LogOut className="h-4 w-4" />
+                  Log out
+                </Button>
+              </>
+            )}
+
             <Link href="/contact" className="hidden lg:block">
               <Button data-testid="button-contact-nav">Contact Us</Button>
             </Link>
@@ -113,6 +135,34 @@ export function Navigation() {
                       </Button>
                     </Link>
                   ))}
+                  {user && isAdmin && (
+                    <>
+                      <Link
+                        href="/admin/messages"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        <Button
+                          variant="outline"
+                          className="w-full justify-start gap-2 mt-4"
+                        >
+                          <LayoutDashboard className="h-4 w-4" />
+                          Admin
+                        </Button>
+                      </Link>
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-start gap-2 text-muted-foreground"
+                        onClick={() => {
+                          setMobileOpen(false);
+                          handleLogout();
+                        }}
+                        data-testid="button-mobile-logout"
+                      >
+                        <LogOut className="h-4 w-4" />
+                        Log out
+                      </Button>
+                    </>
+                  )}
                   <Link href="/contact" onClick={() => setMobileOpen(false)}>
                     <Button className="w-full mt-4" data-testid="button-mobile-contact">
                       Contact Us
