@@ -3,6 +3,17 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
+// Debug: log config status (no secrets)
+if (typeof window !== "undefined") {
+  console.log("[supabase] config:", {
+    hasUrl: !!supabaseUrl,
+    hasKey: !!supabaseAnonKey,
+    urlPrefix: supabaseUrl?.slice(0, 30) ?? "(missing)",
+  });
+}
+
+export const supabaseConfigured = !!(supabaseUrl && supabaseAnonKey);
+
 export const supabase: SupabaseClient | null =
   supabaseUrl && supabaseAnonKey
     ? createClient(supabaseUrl, supabaseAnonKey)

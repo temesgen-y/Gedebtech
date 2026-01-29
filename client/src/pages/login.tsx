@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/form";
 import { useAuth } from "@/contexts/auth-context";
 import { useToast } from "@/hooks/use-toast";
+import { supabaseConfigured } from "@/lib/supabase";
 import { Layout } from "@/components/layout";
 import { Loader2, LogIn } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -93,6 +94,13 @@ export default function Login() {
             </p>
           </CardHeader>
           <CardContent>
+            {!supabaseConfigured && (
+              <Alert variant="destructive" className="mb-4">
+                <AlertDescription>
+                  Supabase is not configured. Check that VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in the deployment environment.
+                </AlertDescription>
+              </Alert>
+            )}
             {notAdminError && (
               <Alert variant="destructive" className="mb-4">
                 <AlertDescription>
