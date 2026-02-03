@@ -336,9 +336,9 @@ export default function About() {
   return (
     <Layout>
       <SEO
-        title="About Us - Leading IT Company in Ethiopia | Gedeb Technologies"
-        description="Learn about Gedeb Technologies, a premier software development company in Ethiopia. Our team delivers innovative IT solutions, custom software, and digital transformation services in Addis Ababa."
-        keywords="about Gedeb Technologies, IT company Ethiopia, software development team Ethiopia, technology company Addis Ababa, IT solutions provider Ethiopia"
+        title="About Gedeb Technologies - Software & BPO Company Ethiopia"
+        description="Leading software development & BPO company in Ethiopia since 2014. Expert team delivering custom software, IT outsourcing, and digital transformation in Addis Ababa."
+        keywords="about Gedeb Technologies, software development company Ethiopia, BPO company Ethiopia, IT company Addis Ababa, technology company Ethiopia"
         url="/about"
         type="organization"
         breadcrumbs={[
@@ -347,19 +347,33 @@ export default function About() {
         ]}
         organization={{
           name: "Gedeb Technologies",
-          url: "https://gedebtech.com",
-          logo: "https://gedebtech.com/favicon.png",
+          url: "https://www.gedebtech.com",
+          logo: "https://www.gedebtech.com/favicon.png",
           sameAs: [
             "https://www.linkedin.com/company/gedeb-technologies",
             "https://twitter.com/gedebtech",
             "https://www.facebook.com/gedebtechnologies",
           ],
         }}
+        faq={[
+          {
+            question: "When was Gedeb Technologies founded?",
+            answer: "Gedeb Technologies was founded in 2014 in Addis Ababa, Ethiopia.",
+          },
+          {
+            question: "What services does Gedeb Technologies offer?",
+            answer: "We offer custom software development, BPO services, web & mobile app development, cloud solutions, DevOps, AI/ML, and IT outsourcing.",
+          },
+          {
+            question: "Where is Gedeb Technologies headquartered?",
+            answer: "Gedeb Technologies is headquartered in Addis Ababa, Ethiopia, with a global client base.",
+          },
+        ]}
       />
       <section className="py-12 lg:py-16 bg-primary">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="font-serif text-2xl lg:text-3xl font-bold text-primary-foreground mb-3">
-            About Us – Best Ethiopia BPO Services Provider
+            About Gedeb Technologies – Software & BPO Company in Ethiopia
           </h1>
           <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/80">
             <Link
@@ -369,7 +383,7 @@ export default function About() {
               Home
             </Link>
             <span>›</span>
-            <span>About Us – Best Ethiopia BPO Services Provider</span>
+            <span>About Gedeb Technologies</span>
           </div>
         </div>
       </section>
@@ -379,12 +393,12 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm font-medium text-primary mb-2">About Us</p>
-              <h1
+              <h2
                 className="font-serif text-3xl lg:text-5xl font-bold mb-6"
                 data-testid="text-about-page-title"
               >
                 Driving Digital Innovation Since 2014
-              </h1>
+              </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Gedeb Technologies is a leading software development company
                 based in Ethiopia, delivering world-class technology solutions

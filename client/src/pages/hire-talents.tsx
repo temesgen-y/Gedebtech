@@ -29,6 +29,7 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
+import { SEO } from "@/components/seo";
 
 const talentCategories = [
   {
@@ -190,6 +191,31 @@ export default function HireTalents() {
 
   return (
     <Layout>
+      <SEO
+        title="Hire Software Developers in Ethiopia | Offshore Development Team"
+        description="Access top engineering talent from Ethiopia. Hire vetted developers, designers, and DevOps engineers. Offshore development team Africa. Flexible engagement models."
+        keywords="hire software developers Ethiopia, offshore development team Africa, hire developers Ethiopia, IT talent outsourcing, staff augmentation Ethiopia"
+        url="/hire-talents"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Hire Talents", url: "/hire-talents" },
+        ]}
+        faq={[
+          {
+            question: "How quickly can I hire developers from Gedeb Technologies?",
+            answer: "We typically match you with vetted candidates within 48 hours. Full onboarding can be completed within 1-2 weeks.",
+          },
+          {
+            question: "What engagement models do you offer?",
+            answer: "We offer Contract, Dedicated Team, and Staff Augmentation models to fit your project needs.",
+          },
+          {
+            question: "Do you provide offshore development teams in Africa?",
+            answer: "Yes. Gedeb Technologies provides offshore development teams from Ethiopia, serving clients across Africa and globally.",
+          },
+        ]}
+      />
       <section className="py-16 lg:py-20 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">

@@ -74,7 +74,7 @@ export function SEO({
   title = "Software Development Company in Ethiopia - Gedeb Technologies",
   description = "Leading software development company in Ethiopia. Custom software, web & mobile apps, ERP/LMS/CRM systems, cloud solutions, and SaaS development. IT company in Addis Ababa.",
   keywords = "Gedeb technologies, Gedeb Tech, software development company in Ethiopia, IT company in Ethiopia, custom software development Ethiopia, web development company in Ethiopia, mobile app development Ethiopia, cloud solutions Ethiopia, SaaS application development, ERP software development Ethiopia, technology company in Ethiopia, software company in Addis Ababa, IT solutions provider Ethiopia, business automation solutions Ethiopia, digital transformation Ethiopia, hire software developers in Ethiopia",
-  image = "https://gedebtech.com/og-image.jpg",
+  image = "https://www.gedebtech.com/og-image.jpg",
   url,
   type = "website",
   author,
@@ -216,8 +216,8 @@ export function SEO({
       "@context": "https://schema.org",
       "@type": "Organization",
       name: organization?.name || "Gedeb Technologies",
-      url: organization?.url || "https://gedebtech.com",
-      logo: organization?.logo || "https://gedebtech.com/favicon.png",
+      url: organization?.url || "https://www.gedebtech.com",
+      logo: organization?.logo || "https://www.gedebtech.com/favicon.png",
       description: description,
       sameAs: organization?.sameAs || [
         "https://www.linkedin.com/company/gedeb-technologies",
@@ -228,7 +228,7 @@ export function SEO({
         "@type": "ContactPoint",
         contactType: "Customer Service",
         email: "info@gedebtech.com",
-        url: "https://gedebtech.com/contact",
+        url: "https://www.gedebtech.com/contact",
         areaServed: "ET",
         availableLanguage: ["en", "am"],
       },
@@ -250,12 +250,12 @@ export function SEO({
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Gedeb Technologies",
-      url: "https://gedebtech.com",
+      url: "https://www.gedebtech.com",
       potentialAction: {
         "@type": "SearchAction",
         target: {
           "@type": "EntryPoint",
-          urlTemplate: "https://gedebtech.com/search?q={search_term_string}",
+          urlTemplate: "https://www.gedebtech.com/search?q={search_term_string}",
         },
         "query-input": "required name=search_term_string",
       },
@@ -310,7 +310,7 @@ export function SEO({
           name: "Gedeb Technologies",
           logo: {
             "@type": "ImageObject",
-            url: "https://gedebtech.com/favicon.png",
+            url: "https://www.gedebtech.com/favicon.png",
           },
         },
         mainEntityOfPage: {

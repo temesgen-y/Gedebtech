@@ -37,7 +37,9 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/gedeb-technologies"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-primary/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 aria-label="LinkedIn"
                 data-testid="link-social-linkedin"
@@ -45,7 +47,9 @@ export function Footer() {
                 <SiLinkedin className="h-4 w-4" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/gedebtechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-primary/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 aria-label="Facebook"
                 data-testid="link-social-facebook"
@@ -139,8 +143,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 shrink-0" />
-                <a
-                  href="tel:+251911000000"
+              <a
+                href="tel:+251928730333"
                   className="hover:text-foreground transition-colors"
                 >
                   +251 928 730 333
@@ -156,12 +160,12 @@ export function Footer() {
             reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">
+            <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Terms of Service
-            </a>
+            </Link>
+            <Link href="/contact" className="hover:text-foreground transition-colors">
+              Contact
+            </Link>
           </div>
         </div>
       </div>

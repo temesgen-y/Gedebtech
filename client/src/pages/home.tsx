@@ -200,9 +200,9 @@ export default function Home() {
   return (
     <Layout>
       <SEO
-        title="Software Development Company in Ethiopia - Gedeb Technologies"
-        description="Leading software development company in Ethiopia. Custom software, web & mobile apps, ERP/LMS/CRM systems, cloud solutions, and SaaS development. IT company in Addis Ababa."
-        keywords="Gedeb technologies, Gedeb Tech, software development company in Ethiopia, IT company in Ethiopia, custom software development Ethiopia, web development company in Ethiopia, mobile app development Ethiopia, cloud solutions Ethiopia, SaaS application development, ERP software development Ethiopia, technology company in Ethiopia, software company in Addis Ababa, IT solutions provider Ethiopia, business automation solutions Ethiopia, digital transformation Ethiopia, hire software developers in Ethiopia"
+        title="Software Development & BPO Company in Ethiopia | Gedeb Technologies"
+        description="Leading software development company & BPO company in Ethiopia. Custom software, web & mobile apps, BPO services, IT outsourcing Africa. Get a free quote today."
+        keywords="software development company in Ethiopia, BPO company in Ethiopia, IT outsourcing services Africa, custom software development, business process outsourcing Africa, customer support outsourcing, offshore development team Africa, Gedeb Technologies"
         url="/"
         type="website"
         breadcrumbs={[

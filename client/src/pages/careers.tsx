@@ -18,6 +18,7 @@ import {
   Zap,
 } from "lucide-react";
 import careerHeroImage from "@assets/stock_images/professional_busines_6192e80e.jpg";
+import { SEO } from "@/components/seo";
 
 const benefits = [
   {
@@ -152,6 +153,17 @@ const values = [
 export default function Careers() {
   return (
     <Layout>
+      <SEO
+        title="Careers at Gedeb Technologies - Software Company Ethiopia"
+        description="Join Gedeb Technologies, a leading software development company in Ethiopia. Explore developer, designer, and engineering roles in Addis Ababa. Apply now."
+        keywords="careers Gedeb Technologies, software jobs Ethiopia, developer jobs Addis Ababa, IT careers Ethiopia"
+        url="/careers"
+        type="website"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Careers", url: "/careers" },
+        ]}
+      />
       <section className="relative overflow-hidden">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 bg-slate-800 dark:bg-slate-900 relative">

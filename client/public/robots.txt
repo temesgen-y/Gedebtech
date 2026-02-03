@@ -1,9 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /admin/
+Disallow: /login
 
 # Sitemap
-Sitemap: https://gedebtech.com/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
+Sitemap: https://www.gedebtech.com/sitemap.xml

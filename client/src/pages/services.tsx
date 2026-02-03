@@ -15,7 +15,7 @@ import {
   CheckCircle2,
   Users,
 } from "lucide-react";
-<h2>Elevate your business with our diverse BPO services – where quality meets affordability.</h2>
+
 const services = [
 
   {
@@ -152,9 +152,9 @@ export default function Services() {
   return (
     <Layout>
       <SEO
-        title="IT Services & Solutions in Ethiopia - Gedeb Technologies"
-        description="Comprehensive technology solutions in Ethiopia: custom software development, web & mobile apps, cloud migration, ERP systems, and digital transformation services."
-        keywords="IT services Ethiopia, software development services, web development services Ethiopia, mobile app development services, cloud solutions Ethiopia, ERP implementation Ethiopia, digital transformation services"
+        title="Software Development & BPO Services in Ethiopia | Gedeb Tech"
+        description="Custom software development, BPO, web & mobile apps, DevOps, AI/ML, customer support outsourcing. Leading IT outsourcing services Africa. Request a quote."
+        keywords="software development company in Ethiopia, BPO company in Ethiopia, custom software development services, web and mobile app development, devops and security consulting, ai and machine learning services, business process outsourcing Africa, customer support outsourcing, data management outsourcing, offshore development team Africa"
         url="/services"
         type="service"
         breadcrumbs={[
@@ -170,16 +170,20 @@ export default function Services() {
         }}
         faq={[
           {
-            question: "What IT services does Gedeb Technologies offer?",
-            answer: "We offer custom software development, web & mobile app development, cloud solutions, ERP systems, SaaS applications, and digital transformation services.",
+            question: "What software development services does Gedeb Technologies offer?",
+            answer: "We offer custom software development, web & mobile app development, cloud solutions, ERP systems, BPO services, DevOps & security, AI/ML, and digital transformation services.",
+          },
+          {
+            question: "Is Gedeb Technologies a BPO company in Ethiopia?",
+            answer: "Yes. Gedeb Technologies is a leading BPO company in Ethiopia offering offshore, nearshore, and onshore outsourcing including customer support, data management, and back-office operations.",
           },
           {
             question: "Where is Gedeb Technologies located?",
-            answer: "Gedeb Technologies is located in Addis Ababa, Ethiopia, serving clients across the country and internationally.",
+            answer: "Gedeb Technologies is headquartered in Addis Ababa, Ethiopia, serving clients across Africa and globally with IT outsourcing services.",
           },
           {
             question: "What industries do you serve?",
-            answer: "We serve healthcare, finance, manufacturing, retail, education, and government sectors with industry-specific solutions.",
+            answer: "We serve healthcare, finance, manufacturing, retail, education, and government sectors with industry-specific software and BPO solutions.",
           },
         ]}
       />
@@ -189,12 +193,10 @@ export default function Services() {
             className="font-serif text-3xl lg:text-5xl font-bold mb-4"
             data-testid="text-services-page-title"
           >
-            Revolutionize Your Business{" "}
-            <span className="text-primary">with Gedeb Technologies</span>
+            Software Development & BPO Services in Ethiopia
           </h1>
           <p className="text-muted-foreground text-lg">
-            Elevate your business with our diverse BPO services – where quality
-            meets affordability.
+            Elevate your business with our diverse software development and BPO services – where quality meets affordability. Custom software, web & mobile apps, DevOps, AI/ML, and business process outsourcing.
           </p>
         </div>
       </section>

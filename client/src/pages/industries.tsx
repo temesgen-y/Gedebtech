@@ -153,7 +153,7 @@ export default function Industries() {
                   <div className="relative aspect-video rounded-md overflow-hidden">
                     <img
                       src={industry.image}
-                      alt={industry.name}
+                      alt={`${industry.name} - Software solutions by Gedeb Technologies`}
                       className="w-full h-full object-cover"
                     />
                   </div>

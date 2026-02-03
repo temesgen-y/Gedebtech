@@ -53,7 +53,7 @@ const contactInfo = [
     icon: Phone,
     title: "Phone",
     content: "+251 928 730 333",
-    href: "tel:+251911000000",
+    href: "tel:+251928730333",
   },
   {
     icon: Clock,
